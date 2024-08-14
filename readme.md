@@ -188,21 +188,19 @@ After you have successfully logged in , Go to the users table and add New user a
 
 > Mobile View.
 
-<div>
- <img src="./screenshots/mobile_home.jpeg" alt="home-page-image" width="33%">
-</div>
+<div float="left">
 
->
- ```Results```
-<div>
- <img src="./screenshots/mob_res.jpeg" alt="results-image" width="33%"></img>
-</div>
+ <img src="./screenshots/mobile_home.jpeg" alt="home-page-image" width="33%"/>
 
->
- ```Vote```
-<div>
- <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"></img>
+ <img src="./screenshots/mob_res.jpeg" alt="results-image" width="33%"/>
+
+ <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"/>
+
 </div>
+| HOME                                                | Results                                       |
+| --------------------------------------------------- | --------------------------------------------- |
+| ![home](./screenshots/mobile_home.jpeg 'title A')   | ![results](./screenshots/mob_res.jpeg 'title B')   |
+
 
 ### ``` Database area```
 > The Database to control all the Tables for inserting data.
