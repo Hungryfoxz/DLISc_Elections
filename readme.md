@@ -197,9 +197,6 @@ After you have successfully logged in , Go to the users table and add New user a
  <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"/>
 
 </div>
-| HOME                                                | Results                                       |
-| --------------------------------------------------- | --------------------------------------------- |
-| ![home](./screenshots/mobile_home.jpeg 'title A')   | ![results](./screenshots/mob_res.jpeg 'title B')   |
 
 
 ### ``` Database area```
