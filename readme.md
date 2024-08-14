@@ -76,43 +76,34 @@ This will create a folder named Django_poll into your current working directory.
 $ cd main
 ```
 Now you will see a directory tree something like this.
->##### main
 
+```bash
+|--env
+|--main
+|    |--app
+|    |--jstoochain
+|    |--main
+|    |--static
+|        |--assets
+|        |--css
+|        |--logo
+|        |--profiles
+|    |--templates
+|        |--admin
+|        |--components
+|        |--base.html
+|        |--index.html
+|        |--result.html
+|        |--vote.html
+|    |--db.sqlite3
+|    |--input.css
+|    |--manage.py
+|--screenshots
+|--readme
+|--requirements.txt
 
->######    |+......./app
+```
 
-
->######    |+......./jstoolchain
-
-
->######    |+......./main
-
-
->######    |+......./static
-
-
->######    |+......./templates
-
-
->#####  db.sqlite3
-
-
->#####  input.css
-
-
->#####  manage.py
-
-
->##### env
-
-
->##### screenshots
-
-
->##### README.md
-
-
->##### requirements.txt
 
 
 > You have to create the environment by typing the below command.
@@ -169,19 +160,19 @@ After you have successfully logged in , Go to the users table and add New user a
 > On successfull Completion of the Server setup , You will be greeted with this page.
 
 
-```Home```
+```Home Page```
 <div style="align:center">
  <img src="./screenshots/desktop_home.jpeg" alt="home-page-image">
 </div>
 
 >
- ```Results```
+ ```Results Page```
 <div style="align:center">
  <img src="./screenshots/desk_res.jpeg" alt="results-page-image" width="100%"></img>
 </div>
 
 >
- ```Vote```
+ ```Vote Page```
 <div style="align:center">
  <img src="./screenshots/des_vot.jpeg" alt="voting-page-image" width="100%"></img>
 </div>
