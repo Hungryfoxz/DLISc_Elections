@@ -188,19 +188,19 @@ After you have successfully logged in , Go to the users table and add New user a
 
 > Mobile View.
 
-<div style="align:center">
+<div>
  <img src="./screenshots/mobile_home.jpeg" alt="home-page-image" width="33%">
 </div>
 
 >
  ```Results```
-<div style="align:center">
+<div>
  <img src="./screenshots/mob_res.jpeg" alt="results-image" width="33%"></img>
 </div>
 
 >
  ```Vote```
-<div style="align:center">
+<div>
  <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"></img>
 </div>
 
