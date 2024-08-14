@@ -2,7 +2,7 @@
 <div style="align:center">
  <img src="main/static/logo/logo.png" alt="logo" width="5%">
 </div>
-# DLISc Elections
+<h1> DLISc Elections </h1>
 
  <h4>This is the DLISc Elections website for student representative elections.</h4>
  
@@ -171,21 +171,43 @@ After you have successfully logged in , Go to the users table and add New user a
 
 ```Home```
 <div style="align:center">
- <img src="./screenshots/hero.png" alt="django-image">
+ <img src="./screenshots/desktop_home.jpeg" alt="home-page-image">
 </div>
 
 >
- ```Footer```
+ ```Results```
 <div style="align:center">
- <img src="./screenshots/footer.png" alt="footer-image" width="100%"></img>
+ <img src="./screenshots/desk_res.jpeg" alt="results-page-image" width="100%"></img>
 </div>
 
+>
+ ```Vote```
+<div style="align:center">
+ <img src="./screenshots/des_vot.jpeg" alt="voting-page-image" width="100%"></img>
+</div>
 
+> Mobile View.
+
+<div style="align:center">
+ <img src="./screenshots/mobile_home.jpeg" alt="home-page-image" width="33%">
+</div>
+
+>
+ ```Results```
+<div style="align:center">
+ <img src="./screenshots/mob_res.jpeg" alt="results-image" width="33%"></img>
+</div>
+
+>
+ ```Vote```
+<div style="align:center">
+ <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"></img>
+</div>
 
 ### ``` Database area```
 > The Database to control all the Tables for inserting data.
 
->```Candidate List``` --- Naame and Bio of the candidates.<br/>
+>```Candidate List``` --- Name and Bio of the candidates.<br/>
 >```Registration``` --- Students who have registerd for the elction process.<br/>
 >```Voted Student List``` --- Students who have casted their votes.<br/>
 >```Voter Positions List``` --- The position list that the various candidates are representing for.<br/>
