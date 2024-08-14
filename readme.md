@@ -84,17 +84,17 @@ Now you will see a directory tree something like this.
 |    |--jstoochain
 |    |--main
 |    |--static
-|        |--assets
-|        |--css
-|        |--logo
-|        |--profiles
+|    |    |--assets
+|    |    |--css
+|    |    |--logo
+|    |    |--profiles
 |    |--templates
-|        |--admin
-|        |--components
-|        |--base.html
-|        |--index.html
-|        |--result.html
-|        |--vote.html
+|    |    |--admin
+|    |    |--components
+|    |    |--base.html
+|    |    |--index.html
+|    |    |--result.html
+|    |    |--vote.html
 |    |--db.sqlite3
 |    |--input.css
 |    |--manage.py
