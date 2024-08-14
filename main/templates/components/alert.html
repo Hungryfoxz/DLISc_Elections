@@ -1,0 +1,22 @@
+<!-- !================  Alert Component  =========== -->
+
+{% if messages %}
+    {% for message in messages %}
+            
+        <div id="alert" class="fixed top-16 right-2 bg-green-300/60 py-2 text-left pl-6 pr-4 rounded-lg border border-green-500 transition-all duration-300 ease-in-out">
+            
+            <strong class="me-2">Updated</strong> 
+            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">&times;</button> 
+            
+        
+        </div>
+
+    {% endfor %}
+{% endif %}
+<script>
+
+    setTimeout(() => {
+        document.getElementById('alert').classList.add('translate-x-[150%]')
+    }, 2000)
+  
+  </script>

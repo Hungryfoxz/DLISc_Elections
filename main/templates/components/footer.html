@@ -1,0 +1,27 @@
+{% load static %}
+<footer class="w-full bg-slate-900">
+
+    <div class="box-border flex flex-col lg:flex-row justify-around p-8 lg:p-20 text-white z-10">
+
+        <div class="flex flex-col items-center justify-center pt-8 lg:pt-0">
+            <div class="flex">
+                <img src="{% static './logo/logo.png' %}" alt="logo" class="h-8">
+                <h1 class="font-semibold text-2xl ms-2">DLISc-Elections</h1>
+            </div>
+            <p class="texl-sm text-left">&copy All rights reserved 2024</p>
+        </div>
+
+        <ul class="text-sm pt-8 lg:text-lg uppercase flex flex-col justify-start items-center lg:items-start">
+            <a href="/"><li class="mt-2">HOME</li></a>
+            <a href="/vote"><li class="mt-2">VOTE</li></a>
+            <a href="/result"><li class="mt-2">RESULTS</li></a>
+        </ul>
+        
+    </div>
+
+    <div class="h-0.5 mt-10 lg:mt-0 mx-auto w-2/3 bg-cyan-200 rounded-full"></div>
+
+    <div class="text-sm text-center text-white py-6">Made with ❤ by @KaustavKrKhanikar</div>
+
+
+</footer>

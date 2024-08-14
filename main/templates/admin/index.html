@@ -1,0 +1,29 @@
+{% extends "admin/index.html" %}
+
+{% block sidebar %}
+    {{ block.super }}
+    <div style="">
+      <div hx-get="voting_status_updates" hx-trigger="load" hx-swap="innerHTML" hx-target="#onOff">
+        <a hx-get="voting_status" hx-swap="innerHTML" hx-target="#onOff"
+        style="font-size: small;
+            border: 2px solid gray;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            background: #417690;">
+        Voting <span id="onOff"></span></a>
+      </div>
+      <div style="margin-top: 2rem;" hx-get="result_status_updates" hx-trigger="load" hx-swap="innerHTML" hx-target="#results">
+        <a hx-get="result_status" hx-swap="innerHTML" hx-target="#results"
+        style="font-size: small;
+            border: 2px solid gray;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            background: #417690;">
+        Results <span id="results"></span></a>
+      </div>
+    </div>
+{% endblock %}

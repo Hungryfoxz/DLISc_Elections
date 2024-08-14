@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<main class="box-border relative min-h-screen">
+
+    
+    <section class="p-8 lg:p-20 mx-auto">
+
+
+    <div class="box-border pb-10 pt-8">
+        <h1 class="text-slate-900 text-center font-bold text-3xl lg:text-6xl">Results</h1>
+        <p class="pt-8 pr-4 text-center">Update the page to get the latest results.
+        </p>
+
+    </div>
+
+
+      <section class="box-border" id="results">
+        {% include './components/results.html' with positions=positions candidates=candidates voted=voted %}
+      </section>
+      
+
+
+
+      <div class="flex flex-col items-center justify-center">
+
+        <a hx-get="/update" hx-target="#results" class="text-slate-950 hover:text-slate-50 border-2 hover:border-purple-500 border-slate-900 mt-4 lg:mt-12 flex flex-row items-center justify-center bg-slate-100 w-1/2 lg:w-1/5 rounded-lg py-3 hover:cursor-pointer focus:bg-purple-500 hover:bg-purple-500 hover:shadow-lg transition-all duration-150 ease-out">
+           Update
+       </a>
+  
+        <a href="/" class="text-slate-50 mt-4 mx-auto flex flex-row items-center justify-center bg-slate-900 w-1/2 lg:w-1/5 rounded-lg py-3 hover:cursor-pointer focus:bg-purple-500 hover:bg-purple-500 hover:shadow-lg transition-all duration-150 ease-out">
+              Home
+        </a>
+
+      </div>
+    
+
+
+    </section>
+
+</main>
+
+{% include './components/footer.html' %}
+
+{% endblock %}

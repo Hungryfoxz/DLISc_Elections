@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% include "./components/modal.html" %}
+
+<main class="box-border relative">
+
+    
+    <section class="p-8 lg:p-20">
+
+
+    <div class="box-border pb-10 pt-8">
+        <h1 class="text-slate-900 text-center font-bold text-3xl lg:text-6xl">Voting Panel</h1>
+        <p class="pt-8 pr-4 text-center">Choose the candidates of your choice below.
+        </p>
+    </div>
+
+
+
+
+    <!-- ! ================  FORM  ================= -->
+    <!-- !+++++++++++++++++++++++++++++++++++++++++ -->
+
+    <form action=" " method="POST">
+
+        <!-- !===== CSRF validation ===== -->
+        {% csrf_token %}
+
+        {% for position in positions %}
+
+        <div class="bg-purple-300 pt-10 rounded-lg mb-8">
+            <h3 class="text-center font-medium text-2xl mb-4 text-slate-700">{{position}}</h3>
+            <div class="h-0.5 mx-auto w-3/4 bg-slate-700 rounded-full"></div>
+
+
+
+        <!-- ?  This div will assign a Row -->
+
+
+        <ul class="p-8 flex flex-col gap-8 lg:flex-row lg:flex-wrap items-center justify-around">
+
+
+            {% for candidate in candidates  %}
+                {% if candidate.position == position %}
+                    <li class="flex flex-col">
+
+
+                        <input type="radio" id="{{candidate.id}}" value="{{candidate.id}}" name="{{candidate.position}}" class="hidden peer" required="">
+                        
+                        <label for="{{candidate.id}}" class="w-full inline-flex items-center justify-between p-5 text-slate-700 bg-white border-2 border-gray-400 rounded-lg cursor-pointer peer-checked:border-pink-500 hover:border-pink-500 hover:text-pink-600 peer-checked:text-pink-600 hover:bg-gray-50 transition-all duration-150 ease-out">                           
+                            <div class="flex flex-col relative">
+                                <img class="bg-cover object-cover h-40 w-40 rounded-full overflow-hidden" src="/{{ candidate.image}}" alt="{{candidate.name}-image}">
+                                <hr class="mb-2 mt-4">
+                                <div class="flex flex-col">
+                                    <div class="w-full text-lg text-center font-semibold first-letter:uppercase">{{candidate.name}}</div>
+                                </div>
+                            </div>
+                        </label>
+                        
+                    </li>
+
+    
+
+
+                {% endif %}
+            {% endfor %}
+
+
+        </ul>
+
+
+        {% endfor %}
+
+    </div>  
+
+                
+                
+        <!--?[++++]=======Extra security step=======[++++]-->
+        <!--?[========= Getting the user email once again ============]-->
+            <!--! ----  email input field ------  -->
+
+        <div class="bg-slate-900 mt-6 rounded-lg rounded-t-none text-gray-50 p-8 lg:p-16">
+            <p class="pb-6 lg:px-16">Please fill the below fields to submit your vote.</p>
+            
+            <div class="lg:px-16">
+
+                <div class="w-full mb-4">
+                    <label class="block tracking-wide mb-2">Email</label>
+                    <input minlength="6" class="appearance-none text-slate-900 block w-full bg-cyan-50 border border-slate-500 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="email" type="email" placeholder="abc123@gmail.com">
+                </div>
+                
+                <div class="w-full mb-4">
+                    <label class="block tracking-wide mb-2">Phone</label>
+                    <input minlength="10" maxlength="10" class="appearance-none text-slate-900 block w-full bg-cyan-50 border border-slate-500 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="phone" type="password" placeholder="**********">
+                    <p class="text-sm text-slate-400">Password is your Phone Number</p>
+                </div>
+                
+            </div>
+
+
+
+        <!--! ======  Buuton submit/register ====== -->
+            <div class="flex flex-col items-center justify-center">
+
+                <div class="mt-4">
+                    <input type="checkbox" id="vote_agree">
+                    <label for="vote_agree">I have registered my account before voting.</label>
+                </div>
+                
+                <input id="vote_submit" disabled class="text-white disabled:opacity-60 disabled:pointer-events-none z-50 mt-4 lg:mt-6 flex flex-row items-center justify-center bg-purple-500 w-1/4 rounded-lg py-3 hover:cursor-pointer focus:bg-pink-600 hover:bg-pink-500 transition-all duration-150 ease-out" type="submit" value="Submit">
+                
+            </div>
+
+        </div>
+
+
+
+
+            <div class="hidden bg-purple-500"></div>
+
+        <script>
+            const checkbox = document.querySelector("#vote_agree");
+        
+            const button = document.querySelector("#vote_submit");
+        
+            const checkStatus = () => {
+                if (checkbox.checked) {
+                button.disabled = false;
+                }
+                else {
+                button.disabled = true;
+                }
+            }
+        
+            checkbox.addEventListener("change", checkStatus);
+    
+            </script>
+    
+    
+    
+    
+        </form>
+    
+        <!--end of form-->
+    
+    </section>
+
+</main>
+
+{% include "./components/footer.html" %}
+
+{% endblock %}
