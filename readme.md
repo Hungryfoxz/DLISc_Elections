@@ -188,15 +188,13 @@ After you have successfully logged in , Go to the users table and add New user a
 
 > Mobile View.
 
-<div float="left">
 
- <img src="./screenshots/mobile_home.jpeg" alt="home-page-image" width="33%"/>
+- [`MOBILE Home Page`](./screenshots/mobile_home.jpeg)
+- [`MOBILE Results Page`](./screenshots/mob_res.jpeg)
+- [`MOBILE Vote Page`](./screenshots/mob_vot.jpeg)
 
- <img src="./screenshots/mob_res.jpeg" alt="results-image" width="33%"/>
 
- <img src="./screenshots/mob_vot.jpeg" alt="voting-page-image" width="33%"/>
 
-</div>
 
 
 ### ``` Database area```
