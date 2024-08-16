@@ -35,27 +35,24 @@ Make sure you have python@latest on your machine.
 > Download the zip file by selecting the branch as master.
 
 
-> Unzip it and move inside the main folder.
+> Unzip it and move inside the DLISc_Elections folder.
 
 
-> You have to create the environment by typing the below command.
+> You have to activate the environment by typing the below command.
 
 ```javascript
 $.\env\Scripts\activate
 ```
 
 
-> Again move inside the main folder.Once you are inside the first main folder ,again move into the next main folder.
-
-
-> Now open the powershell or command prompt with the current main folder and type the bellow command.
+> If the environment is activated successfully, you will see something like ```$(env)``` in the terminal. Now move inside the main folder.
 
 
 ```javascript
 $ python3 manage.py runserver
 ```
 This will start the server on 8000
-> vist the below link in browser 
+> Vist the below link in browser 
 ```javascript 
 $ http://127.0.0.1:8000
  ```
@@ -70,10 +67,10 @@ And you are good to go.
 ```javascript
 $ git clone https://github.com/Hungryfoxz/DLISc_Elections.git
 ```
-This will create a folder named Django_poll into your current working directory.
+This will create a folder named DLISc_Elections into your current working directory.
 > Now cd into the directory 
 ```javascript
-$ cd main
+$ cd DLISc_Elections
 ```
 Now you will see a directory tree something like this.
 
@@ -106,18 +103,13 @@ Now you will see a directory tree something like this.
 
 
 
-> You have to create the environment by typing the below command.
+> You have to activate the environment by typing the below command.
 
 ```javascript
 $.\env\Scripts\activate
 ```
 
-> Now cd into the main folder 
-
-```javascript
-$ cd main
-```
-> Now cd again into the main folder 
+> If the environment is activated successfully, you will see something like ```$(env)``` in the terminal. Now move inside the main folder. 
 
 ```javascript
 $ cd main
@@ -198,22 +190,22 @@ After you have successfully logged in , Go to the users table and add New user a
 
 > In addition it contains two buttons.
 
->```Voting ON/OFF```
->```Results Show/Hide```
+```Voting ON/OFF```<br/>
+```Results Show/Hide```
 
 
 _________________________________________________________________________________________
 ## Comments
 >
- Building this website was a rewarding journey from concept to code. Django's built-in SQLite3 database significantly simplified the development process, making it the preferred choice...<br/>
+ Building this website was a rewarding journey from concept to code. Django's built-in SQLite3 database significantly simplified the development process, making it the preferred choice.<br/>
 
- This project was completed within 16 hours in one day. With this project I learned HTMX, and I have to admit HTMX is good stuff.
+ This project was completed within 16 hours in one day. With this project I learned HTMX, and I have to admit HTMX is feels so powerful.
  It significantly decreases the amount of javascript to be written and is so much better to work on. Although many developers might have different opinions about it, as a beginner I liked it very much.<br/>
 
  I am well acquinted with the process of developing logic for voting website as I have done it a few times before. Hence it was 
  less time consuming for me.<br/>
 
- Although I have made websites before but I haven't used them in real life. Here Ngrok service helped me to host the website from my laptop and tunneling though ngrok servers to the users. Without Ngrok this would not have been possible.<br/>
+ Although I have made websites before but I haven't used them in real life. Thanks to Ngrok ,which helped me to host the website from my laptop and tunneling though ngrok servers to the users. Without Ngrok this would not have been possible.<br/>
 
  ```Fun Fact``` The idea of building the website came as a fun project when I was discussing about the upcoming Department Representative with my friend Chintan Sharma. I thought why not develop a website for 2024 DR and ADR elections of DLISc, Gauhati University...<br/>
 
